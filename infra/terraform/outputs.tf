@@ -22,6 +22,6 @@ output "nexus" {
 }
 
 output "ansible_inventory_hint" {
-  description = "Готовая строка для inventory ansible"
-  value       = "nexus-01 ansible_host=${yandex_compute_instance.nexus.network_interface.0.nat_ip_address} ansible_user=yc-user"
+  description = "Готовая строка для inventory ansible (в образе AlmaLinux пользователь по умолчанию — almalinux)"
+  value       = "nexus-01 ansible_host=${yandex_compute_instance.nexus.network_interface.0.nat_ip_address} ansible_user=almalinux"
 }

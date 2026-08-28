@@ -1,0 +1,67 @@
+
+PLAY [Get Nexus installed] *****************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [nexus-01]
+
+TASK [Create Nexus group] ******************************************************
+ok: [nexus-01]
+
+TASK [Create Nexus user] *******************************************************
+ok: [nexus-01]
+
+TASK [Install JDK] *************************************************************
+ok: [nexus-01]
+
+TASK [Create Nexus directories] ************************************************
+ok: [nexus-01] => (item=/home/nexus/log)
+ok: [nexus-01] => (item=/home/nexus/sonatype-work/nexus3)
+ok: [nexus-01] => (item=/home/nexus/sonatype-work/nexus3/etc)
+ok: [nexus-01] => (item=/home/nexus/pkg)
+ok: [nexus-01] => (item=/home/nexus/tmp)
+
+TASK [Download Nexus] **********************************************************
+ok: [nexus-01]
+
+TASK [Unpack Nexus] ************************************************************
+skipping: [nexus-01]
+
+TASK [Link to Nexus Directory] *************************************************
+ok: [nexus-01]
+
+TASK [Add NEXUS_HOME for Nexus user] *******************************************
+ok: [nexus-01]
+
+TASK [Add run_as_user to Nexus.rc] *********************************************
+ok: [nexus-01]
+
+TASK [Raise nofile limit for Nexus user] ***************************************
+ok: [nexus-01]
+
+TASK [Create Nexus service for SystemD] ****************************************
+ok: [nexus-01]
+
+TASK [Ensure Nexus service is enabled for SystemD] *****************************
+ok: [nexus-01]
+
+TASK [Create Nexus vmoptions] **************************************************
+ok: [nexus-01]
+
+TASK [Create Nexus properties] *************************************************
+ok: [nexus-01]
+
+TASK [Lower Nexus disk space threshold] ****************************************
+skipping: [nexus-01]
+
+TASK [Start Nexus service if enabled] ******************************************
+changed: [nexus-01]
+
+TASK [Ensure Nexus service is restarted] ***************************************
+skipping: [nexus-01]
+
+TASK [Wait for Nexus port if started] ******************************************
+ok: [nexus-01]
+
+PLAY RECAP *********************************************************************
+nexus-01                   : ok=16   changed=1    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+

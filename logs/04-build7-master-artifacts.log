@@ -1,0 +1,30 @@
+[03:16:35]W: Step 1/2: Deploy to Nexus (master) (Maven) (9s)
+[03:16:35]i:	 [Step 1/2] Build step condition "teamcity.build.branch equals master" is satisfied
+[03:16:37]i:	 [Step 1/2] [INFO] BUILD SUCCESS
+[03:16:37]i:	 [Step 1/2] [INFO] Total time:  0.434 s
+[03:16:43] :	 [Step 1/2] [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s -- in plaindoll.WelcomerTest
+[03:16:43] :	 [Step 1/2] [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[03:16:44] :	 [Step 1/2] [INFO] Installing /opt/buildagent/work/c8a6e55783a5619a/pom.xml to /opt/buildagent/system/jetbrains.maven.runner/maven.repo.local/org/netology/plaindoll/0.0.2/plaindoll-0.0.2.pom
+[03:16:44] :	 [Step 1/2] [INFO] Installing /opt/buildagent/work/c8a6e55783a5619a/target/plaindoll-0.0.2.jar to /opt/buildagent/system/jetbrains.maven.runner/maven.repo.local/org/netology/plaindoll/0.0.2/plaindoll-0.0.2.jar
+[03:16:44] :	 [Step 1/2] [INFO] Uploaded to nexus: http://46.21.244.135:8081/repository/maven-releases/org/netology/plaindoll/0.0.2/plaindoll-0.0.2.pom (1.5 kB at 11 kB/s)
+[03:16:44] :	 [Step 1/2] [INFO] Uploaded to nexus: http://46.21.244.135:8081/repository/maven-releases/org/netology/plaindoll/0.0.2/plaindoll-0.0.2.jar (3.2 kB at 32 kB/s)
+[03:16:44] :	 [Step 1/2] [INFO] Uploaded to nexus: http://46.21.244.135:8081/repository/maven-releases/org/netology/plaindoll/maven-metadata.xml (301 B at 3.4 kB/s)
+[03:16:44] :	 [Step 1/2] [INFO] BUILD SUCCESS
+[03:16:44] :	 [Step 1/2] [INFO] Total time:  4.720 s
+[03:16:44] :	 [Step 1/2] Publishing artifacts
+[03:16:44] :		 [Publishing artifacts] Collecting files to publish: [/opt/buildagent/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity]
+[03:16:44] :		 [Publishing artifacts] Publishing 1 file using [WebPublisher]: /opt/buildagent/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity
+[03:16:44] :		 [Publishing artifacts] Publishing 1 file using [ArtifactsCachePublisherImpl]: /opt/buildagent/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity
+[03:16:44]i:		 [Publishing artifacts] Will publish 1 artifact(s) to TeamCity node with id MAIN_SERVER
+[03:16:45]W: Step 2/2: Test (feature branches) (Maven)
+[03:16:45]W:	 [Step 2/2] Build step Test (feature branches) (Maven) is skipped because of unfulfilled condition: "teamcity.build.branch does not equal master"
+[03:16:54] : Publishing artifacts
+[03:16:54] :	 [Publishing artifacts] Collecting files to publish: [/opt/buildagent/system/perfmon/temp/7/perfmon.csv=>.teamcity/perfmon/, /opt/buildagent/temp/agentTmp/build_stages.txt=>.teamcity/perfmon/]
+[03:16:54] :	 [Publishing artifacts] Publishing 2 files using [WebPublisher]: /opt/buildagent/system/perfmon/temp/7/perfmon.csv, /opt/buildagent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[03:16:54] :	 [Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisherImpl]: /opt/buildagent/system/perfmon/temp/7/perfmon.csv, /opt/buildagent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[03:16:54]i:	 [Publishing artifacts] Will publish 2 artifact(s) to TeamCity node with id MAIN_SERVER
+[03:16:54] : Publishing artifacts
+[03:16:54] :	 [Publishing artifacts] Collecting files to publish: [target/*.jar]
+[03:16:54] :	 [Publishing artifacts] Publishing 2 files using [WebPublisher]: target/*.jar
+[03:16:54] :	 [Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisherImpl]: target/*.jar
+[03:16:55]i:	 [Publishing artifacts] Will publish 2 artifact(s) to TeamCity node with id MAIN_SERVER

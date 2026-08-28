@@ -1,0 +1,15 @@
+ansible_inventory_hint = "nexus-01 ansible_host=46.21.244.135 ansible_user=almalinux"
+nexus = {
+  "external_ip" = "46.21.244.135"
+  "internal_ip" = "10.10.0.20"
+  "url" = "http://46.21.244.135:8081"
+}
+teamcity_agent = {
+  "external_ip" = "51.250.8.15"
+  "internal_ip" = "10.10.0.11"
+}
+teamcity_server = {
+  "external_ip" = "51.250.8.32"
+  "internal_ip" = "10.10.0.10"
+  "url" = "http://51.250.8.32:8111"
+}

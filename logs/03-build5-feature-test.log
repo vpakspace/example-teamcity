@@ -1,0 +1,20 @@
+[03:12:34]W: Step 1/2: Deploy to Nexus (master) (Maven)
+[03:12:34]W:	 [Step 1/2] Build step Deploy to Nexus (master) (Maven) is skipped because of unfulfilled condition: "teamcity.build.branch equals master"
+[03:12:34]W: Step 2/2: Test (feature branches) (Maven) (8s)
+[03:12:34]i:	 [Step 2/2] Build step condition "teamcity.build.branch does not equal master" is satisfied
+[03:12:36]i:	 [Step 2/2] [INFO] BUILD SUCCESS
+[03:12:36]i:	 [Step 2/2] [INFO] Total time:  0.396 s
+[03:12:41] :	 [Step 2/2] [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s -- in plaindoll.WelcomerTest
+[03:12:41] :	 [Step 2/2] [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[03:12:41] :	 [Step 2/2] [INFO] BUILD SUCCESS
+[03:12:41] :	 [Step 2/2] [INFO] Total time:  2.844 s
+[03:12:41] :	 [Step 2/2] Publishing artifacts
+[03:12:41] :		 [Publishing artifacts] Collecting files to publish: [/opt/buildagent/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity]
+[03:12:41] :		 [Publishing artifacts] Publishing 1 file using [WebPublisher]: /opt/buildagent/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity
+[03:12:41] :		 [Publishing artifacts] Publishing 1 file using [ArtifactsCachePublisherImpl]: /opt/buildagent/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity
+[03:12:41]i:		 [Publishing artifacts] Will publish 1 artifact(s) to TeamCity node with id MAIN_SERVER
+[03:12:52] : Publishing artifacts
+[03:12:52] :	 [Publishing artifacts] Collecting files to publish: [/opt/buildagent/system/perfmon/temp/5/perfmon.csv=>.teamcity/perfmon/, /opt/buildagent/temp/agentTmp/build_stages.txt=>.teamcity/perfmon/]
+[03:12:52] :	 [Publishing artifacts] Publishing 2 files using [WebPublisher]: /opt/buildagent/system/perfmon/temp/5/perfmon.csv, /opt/buildagent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[03:12:52] :	 [Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisherImpl]: /opt/buildagent/system/perfmon/temp/5/perfmon.csv, /opt/buildagent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[03:12:52]i:	 [Publishing artifacts] Will publish 2 artifact(s) to TeamCity node with id MAIN_SERVER
