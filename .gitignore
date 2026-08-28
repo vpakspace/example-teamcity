@@ -1,1 +1,11 @@
-target
+target/
+
+# terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate
+infra/terraform/*.tfstate.*
+infra/terraform/tfplan
+infra/terraform/.terraform.lock.hcl
+
+# ansible
+infra/ansible/*.retry

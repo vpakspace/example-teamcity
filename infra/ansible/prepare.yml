@@ -1,0 +1,13 @@
+---
+# Подготовка хоста под playbook из ДЗ.
+# Nexus по умолчанию ставится в /home/nexus, а SELinux на EL9 не даёт systemd
+# запускать исполняемые файлы из домашних каталогов (status=203/EXEC).
+# Переводим SELinux в permissive — стенд учебный, playbook из ДЗ остаётся без правок.
+- name: Prepare host for Nexus installation
+  hosts: nexus
+  become: true
+  tasks:
+    - name: Set SELinux to permissive
+      ansible.posix.selinux:
+        policy: targeted
+        state: permissive

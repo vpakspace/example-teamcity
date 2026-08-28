@@ -1,0 +1,17 @@
+version: "3"
+services:
+  teamcity-agent:
+    image: jetbrains/teamcity-agent:${teamcity_version}
+    container_name: teamcity-agent
+    restart: always
+    environment:
+      SERVER_URL: "http://${server_ip}:8111"
+      AGENT_NAME: "agent-01"
+    volumes:
+      - agent-conf:/data/teamcity_agent/conf
+      - agent-work:/opt/buildagent/work
+      - agent-system:/opt/buildagent/system
+volumes:
+  agent-conf: {}
+  agent-work: {}
+  agent-system: {}
